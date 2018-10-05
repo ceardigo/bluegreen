@@ -1,0 +1,11 @@
+commit 6f6c4f470e207c5759e4387750f6c87e390f8940
+tree d65b2b47d0ca5b977ffeebeea906c2e08899947b
+parent 7852341e0338f7e61156eadb5b524fd525b2a1fc
+author root <root@devops.dexter.com.br> 2018-10-05 14:38:08 +0000
+committer root <root@devops.dexter.com.br> 2018-10-05 14:38:08 +0000
+
+    teste
+
+
+
+:100644 100644 a8c40d2e9899f41eb508017d83239da084a399ca f6e0c002133a151ec334ee81a61a5c9f81a27d51 M	teste.txt

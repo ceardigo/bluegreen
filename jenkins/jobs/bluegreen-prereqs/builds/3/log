@@ -1,0 +1,24 @@
+Started by user unknown or anonymous
+Building in workspace /var/lib/jenkins/workspace/bluegreen-prereqs
+[bluegreen-prereqs] $ ansible-playbook /etc/ansible/playbooks/prereqs.yaml -f 5
+
+PLAY [instalando prerequisitos] ************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [docker.dexter.com.br]
+
+TASK [prereqs : garantindo os pacotes basicos] *********************************
+ok: [docker.dexter.com.br]
+
+TASK [prereqs : instalando docker-py] ******************************************
+ok: [docker.dexter.com.br]
+
+TASK [prereqs : garantindo que servicos estao rodando] *************************
+ok: [docker.dexter.com.br] => (item=docker)
+ok: [docker.dexter.com.br] => (item=nginx)
+
+PLAY RECAP *********************************************************************
+docker.dexter.com.br       : ok=4    changed=0    unreachable=0    failed=0   
+
+Triggering a new build of [8mha:////4C0S67H+nvjc3Vln1o6qHt23KGkKRyK04SNvBz4Fde/5AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZJ/az8JP2knNLU9KLU1DxdoK6SxMy81CJ9AP9dEpzOAAAA[0mbluegreen-container
+Finished: SUCCESS

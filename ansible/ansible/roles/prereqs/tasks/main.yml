@@ -1,0 +1,27 @@
+---
+
+- name: garantindo os pacotes basicos
+  package:
+    name:
+      - docker-ce
+      - nginx
+      - python-pip  
+    state: present
+
+
+- name: instalando docker-py
+  pip:
+    name: docker-py
+
+
+- name: garantindo que servicos estao rodando
+  service:
+    name: "{{item}}"
+    state: started
+  with_items:
+      - docker
+      - nginx
+    
+
+
+

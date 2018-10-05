@@ -1,0 +1,7 @@
+---
+
+- name: subindo containers
+  hosts: docker
+  roles:
+    - container
+

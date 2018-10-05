@@ -1,0 +1,24 @@
+Started by upstream project "[8mha:////4PCMoHzKABhEZcaVYNz/A6MLYv4lTuITd140AOkO56W2AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZx/az8JP2knNLU9KLU1DzdgqLUotTCYn0AjMWwZcwAAAA=[0mbluegreen-prereqs" build number [8mha:////4LlOi85rPMOY6k4qxOoZPYb5ACst7I7hIq8ybYyUx/GCAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgn9rPwk/aSc0tT0otTUPN2CotSi1MJifSMADH+6B80AAAA=[0m2
+originally caused by:
+ Started by user unknown or anonymous
+Building in workspace /var/lib/jenkins/workspace/bluegreen-container
+[bluegreen-container] $ ansible-playbook /etc/ansible/playbooks/container.yaml -f 5
+
+PLAY [subindo containers] ******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [docker.dexter.com.br]
+
+TASK [container : criando volumes do docker] ***********************************
+ok: [docker.dexter.com.br] => (item=blue)
+ok: [docker.dexter.com.br] => (item=green)
+
+TASK [container : criando o container blue e green] ****************************
+ok: [docker.dexter.com.br] => (item={u'volume': u'green', u'name': u'green', u'imagem': u'httpd'})
+ok: [docker.dexter.com.br] => (item={u'volume': u'blue', u'name': u'blue', u'imagem': u'httpd'})
+
+PLAY RECAP *********************************************************************
+docker.dexter.com.br       : ok=3    changed=0    unreachable=0    failed=0   
+
+Triggering a new build of [8mha:////4IhFYAOSWdXsFRp4t+DALAntNpDQDdTCsTBCQDXJr6uNAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP2knNLU9KLU1DzdlNSCnPxKfQCz1g9BywAAAA==[0mbluegreen-deploy
+Finished: SUCCESS

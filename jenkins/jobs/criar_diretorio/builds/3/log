@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4Ezj3nFHR00uCM2gtpZliM28dpeL4+inreUnhJB35CKdAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/ZTUsvyCYgAbl/2QxQAAAA==[0mdevops in workspace /tmp/jenkins2/workspace/criar_diretorio
+[criar_diretorio] $ /bin/sh -xe /tmp/jenkins7968942516329462909.sh
++ rm -rf /tmp/exercicio
++ mkdir /tmp/exercicio
+Triggering a new build of [8mha:////4GlIEjetiuLtjpeKbHfY4NnhuYnE2EkXCgJ43h3uNnYzAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYR/az8JP3k/ILMxKL4xKLC0syyfH0Afgg3dMkAAAA=[0mcopiar_arquivo
+Finished: SUCCESS

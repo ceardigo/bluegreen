@@ -1,0 +1,7 @@
+---
+
+- name: instalando prerequisitos
+  hosts: docker
+  roles:
+    - prereqs
+

@@ -1,0 +1,61 @@
+Started by upstream project "[8mha:////4C0S67H+nvjc3Vln1o6qHt23KGkKRyK04SNvBz4Fde/5AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZJ/az8JP2knNLU9KLU1DxdoK6SxMy81CJ9AP9dEpzOAAAA[0mbluegreen-container" build number [8mha:////4AwKy52J/VCP6KvZuMkwYH8XkO3ont3Qh4j7DlkhLocjAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBin9rPwk/aSc0tT0otTUPF2grpLEzLzUIn0TADkxkWXPAAAA[0m4
+originally caused by:
+ Started by upstream project "[8mha:////4PCMoHzKABhEZcaVYNz/A6MLYv4lTuITd140AOkO56W2AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZx/az8JP2knNLU9KLU1DzdgqLUotTCYn0AjMWwZcwAAAA=[0mbluegreen-prereqs" build number [8mha:////4Inp3ttRkWEp+ZIYVNASGGlqjrE1gwQyP2M7YCBFmPDpAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgn9rPwk/aSc0tT0otTUPN2CotSi1MJifRMAOdrZ7s0AAAA=[0m4
+ originally caused by:
+  Started by GitLab push by Administrator
+Building in workspace /var/lib/jenkins/workspace/bluegreen-deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://docker.dexter.com.br:8081/root/bluegreen.git # timeout=10
+Fetching upstream changes from http://docker.dexter.com.br:8081/root/bluegreen.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://docker.dexter.com.br:8081/root/bluegreen.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 389b266297904d86bf74536182d5ab221cbe50a3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 389b266297904d86bf74536182d5ab221cbe50a3
+Commit message: "commit 2"
+ > git rev-list --no-walk 1145ebd4d6659a69a497d979cebc0673f7f82872 # timeout=10
+[bluegreen-deploy] $ ansible-playbook /etc/ansible/playbooks/deploy.yaml -f 5
+
+PLAY [executando deploy] *******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [docker.dexter.com.br]
+
+TASK [deploy : verificando o container que esta no ar] *************************
+ok: [docker.dexter.com.br]
+
+TASK [deploy : enviando site para green] ***************************************
+changed: [docker.dexter.com.br]
+
+TASK [deploy : enviando site para blue] ****************************************
+skipping: [docker.dexter.com.br]
+
+TASK [deploy : consultando ip do container green] ******************************
+changed: [docker.dexter.com.br]
+
+TASK [deploy : consultando ip do container blue] *******************************
+skipping: [docker.dexter.com.br]
+
+TASK [deploy : criando template para o green] **********************************
+changed: [docker.dexter.com.br]
+
+TASK [deploy : criando template para o blue] ***********************************
+skipping: [docker.dexter.com.br]
+
+TASK [deploy : apagando ambiente green] ****************************************
+skipping: [docker.dexter.com.br]
+
+TASK [deploy : apagando ambiente blue] *****************************************
+changed: [docker.dexter.com.br]
+
+TASK [deploy : realizando restart] *********************************************
+changed: [docker.dexter.com.br]
+
+PLAY RECAP *********************************************************************
+docker.dexter.com.br       : ok=7    changed=5    unreachable=0    failed=0   
+
+Finished: SUCCESS

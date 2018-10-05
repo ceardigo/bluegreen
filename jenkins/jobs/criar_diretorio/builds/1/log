@@ -1,0 +1,26 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4Ezj3nFHR00uCM2gtpZliM28dpeL4+inreUnhJB35CKdAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/ZTUsvyCYgAbl/2QxQAAAA==[0mdevops in workspace /tmp/jenkins2/workspace/criar_diretorio
+Cloning the remote Git repository
+Cloning repository http://docker.dexter.com.br:8081/root/exibir-webhook.git
+ > git init /tmp/jenkins2/workspace/criar_diretorio # timeout=10
+Fetching upstream changes from http://docker.dexter.com.br:8081/root/exibir-webhook.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://docker.dexter.com.br:8081/root/exibir-webhook.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url http://docker.dexter.com.br:8081/root/exibir-webhook.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://docker.dexter.com.br:8081/root/exibir-webhook.git # timeout=10
+Fetching upstream changes from http://docker.dexter.com.br:8081/root/exibir-webhook.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://docker.dexter.com.br:8081/root/exibir-webhook.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7852341e0338f7e61156eadb5b524fd525b2a1fc (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7852341e0338f7e61156eadb5b524fd525b2a1fc
+Commit message: "teste"
+First time build. Skipping changelog.
+[criar_diretorio] $ /bin/sh -xe /tmp/jenkins4904276687942888415.sh
++ rm -rf /tmp/exercicio
++ mkdir /tmp/exercicio
+Finished: SUCCESS
